@@ -166,7 +166,7 @@ func launchURL(configs []configBlock, url string, logger *log.Logger) error {
 	var args []string
 
 	if browser == "firefox" {
-		args = []string{"/usr/bin/open", "-a", "/Applications/Firefox.app", url, "--args", "-g", "-P", profile}
+		args = []string{"/Applications/Firefox.app/Contents/MacOS/firefox", "-P", profile, "-new-tab", "-url", url}
 	} else if browser == "chrome" {
 		args = []string{"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
 			fmt.Sprintf("--profile-directory=%s", profile), "-t", url}
