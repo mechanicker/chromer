@@ -2,15 +2,15 @@
 # Copy this file with your custom filters as ~/.chromer
 
 # Personal profile
-#[brave|personal]
 [safari|default]
-#[chrome|Profile 4]
 #[firefox|dhruva]
+#[brave|personal]
+#[chrome|Profile 4]
 
 # Atlassian profile
 #[brave|work]
-[chrome|Profile 1]
-#[firefox|dhruva]
+#[chrome|Profile 1]
+[firefox|atlassian]
 # Internet URLs
 atlassian
 atl-paas.net
@@ -21,7 +21,7 @@ app.datadoghq.com
 signalfx.com
 splunk.com
 slack.com
-app.launchdarkly.com
+launchdarkly.com
 opsgenie.com
 opsg.in
 jira
@@ -29,7 +29,19 @@ confluence
 lever.co
 console.aws.amazon.com
 http://go/
-zoom.us
 atlassianinternal.statuspage.io
-# Match local file paths
-xpsearch
+devbucket.org
+one.nr
+newrelic.com
+getclockwise.com
+sli.do
+logicmonitor.com
+marketplace.zoom.us
+trello.com
+donut.ai
+app.rfpio.com
+miro.com
+
+[zoom.us|none]
+netapp.zoom.us
+atlassian.zoom.us
