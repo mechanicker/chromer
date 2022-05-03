@@ -3,6 +3,7 @@
 
 BUILDROOT=build
 BUILDTIME=$(shell date +%d_%b_%Y)
+DEFAULTBROWSER := $(shell command -v defaultbrowser)
 
 all: $(BUILDROOT)/Chromer.app
 
@@ -23,8 +24,11 @@ install: $(BUILDROOT)/Chromer.app
 	pkill chromer; echo
 	rm -fr /Applications/Chromer.app
 	cp -rf $(BUILDROOT)/Chromer.app /Applications/.
+ifdef DEFAULTBROWSER	
+	defaultbrowser chromer
+else
 	open /Applications/Chromer.app
-
+endif
 zip: $(BUILDROOT)/Chromer.app
 	cd build && zip -r -9 ../Chromer.app.$(BUILDTIME).zip Chromer.app
 

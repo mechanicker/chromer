@@ -24,6 +24,10 @@ schemes.
   and a small icon in the Mac dock
 * Go to 'System Preferences', 'General' and 'Default Web Browser' drop down.
   Select 'Chromer' as the default browser.
+  * Incase you do not see `chromer` in the list of browsers, use a helper app to set default browser from home-brew
+    1. `brew install defaultbrowser`
+    2. `defaultbrowser chromer`
+  
 
 
 ### TODO ###
