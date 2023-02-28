@@ -1,10 +1,10 @@
-module github.com/0xdky/chromer
+module github.com/mechanicker/chromer
 
-go 1.19
+go 1.20
 
 require (
 	github.com/andlabs/ui v0.0.0-20200610043537-70a69d6ae31e
-	github.com/fsnotify/fsnotify v1.5.4
+	github.com/fsnotify/fsnotify v1.6.0
 )
 
-require golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
+require golang.org/x/sys v0.0.0-20220908164124-27713097b956 // indirect
